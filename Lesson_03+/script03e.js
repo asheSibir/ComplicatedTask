@@ -32,18 +32,15 @@ switch(lang) {
         console.log('неизвестный язык');
 }
 
-// //Вариант многомерный массив без ифов и switch
-lang = prompt('Выберите язык: ru или eng', '');
-
-let week = [
-    {language:'ru', days:'понедельник, вторник, среда, четверг, пятница, суббота, воскресенье}
-    {language:'eng', days:'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday'};
+//через многомерный массив без ифов и switch.
+'use strict';
+const week = [
+    {language: 'ru', days: 'понедельник, вторник, среда, четверг, пятница, суббота, воскресенье', ind: 1},
+    {language: 'eng', days: 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday', ind: 2}
 ];
+let lingua = prompt('Выберите язык: ru или eng', '');
+lingua === week[0].language ? console.log(week[0].days) : console.log(week[1].days);
 
-let presentation = week.filter(function(e){
-    return e.language = lang;
-});
-console.log(presentation);
 
 
 // У нас есть переменная namePerson. 
