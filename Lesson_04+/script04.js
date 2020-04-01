@@ -49,6 +49,15 @@ const long = function(a){
  
 console.log(long(i));
 
+const cub = 9;
+let result = 1;
+let N = 3;
+for (let i = 0; i < N; i++){
+    result *= cub;
+}
+console.log(result);
+
+
 
 
 
