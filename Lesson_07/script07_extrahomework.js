@@ -17,8 +17,8 @@ for (let day of week){
     let todayNum = now.getDay();
 
     console.log(day);
-        if(day === week[todayNum]){
-            console.log(week[todayNum].bold());
+        if(day === week[todayNum()]){
+            console.log(week[todayNum()].bold());
             }
         if (day === 'суббота' || day === 'воскресеньe'){
             console.log(day.italics());
