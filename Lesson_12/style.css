@@ -1,0 +1,10 @@
+body {
+    text-align : center;
+  }
+ 
+  #change {
+    display : inline-block;
+    font-size : inherit;
+    margin : auto;
+    padding : 0.6em;
+  }
